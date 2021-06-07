@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Learn Programming</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/Style.css"> <!-- link digunakan untuk menghubungkan file 1 dengan yang lain -->
+	<!-- untuk menghubungkan ke folder lain, apabila dalam satu folder dan di dalam nya ada folder maka buat nama folder lalu buat nama file. dan apabila masing-masing berada di folder yang berbeda maka guna ../ untuk naik satu folder setelah itu /nama folder/nama -->
+</head>
+<body>
+	<nav>  <!-- nav digunakan untuk mempresentasikan link navigasi. nav adalah wadah dari link yang akan mendirect kita ke halaman lain. -->
+		<div class="wrapper"> <!-- Fungsi div pada HTML biasanya untuk mengelompokkan elemen atau tag-tag agar menjadi suatu grup. Tag div ini juga sering digunakan untuk mendefinisikan id atau class dari css. Fungsi div pada HTML lainnya yang sering digunakan oleh para programmer adalah untuk membatasi bagian satu dengan bagian yang lain --> <!-- wrapper digunakan untuk menampung menu dan logo yang kita inginkan -->
+			<div class="logo"><a href="">Fajrin's House.</a></div>
+			<div class="menu">
+				<ul> <!-- ul digunakan untuk membuat list dengan bullet -->
+					<li><a href="#home">Home</a></li> <!-- li digunakan untuk membuat list -->
+					<li><a href="#courses">Courses</a></li> <!-- Anchor  adalah teks yang menunjukkan awalan dan akhiran sebuah hypertext link. HTML <a> element digunakan untuk mendefinisikan sebuah hyperlink. Link dapat merujuk ke halaman yang sedang terbuka ataupun ke halaman lain (website lain). -->
+					<li><a href="#tutors">Tutor</a></li>
+					<li><a href="#partners">Partners</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="" class="tbl-biru">Sign Up</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="wrapper">
+		<!-- Untuk home -->
+		<section id="home"> <!-- Pada atribut ID, digunakan untuk penamaan elemen pada HTML yang memiliki karakteristik yang unik atau berbeda. Tidak diperkenankan ada dua elemen yang memiliki ID yang sama. -->
+			<img src="https://image.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg"/>
+			<div class="column"> <!-- Atribut Class biasanya digunakan untuk memberikan penamaan elemen yang memiliki karakteristik atau struktur yang dapat digunakan secara berulang-ulang dalam tag HTML. -->
+				<p class="description">Learn Programming #InHome</p>
+				<h2>Stay Save, Stay Healthy, And Keep Spirit</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing eli. </p>
+				<p><a href="" class="tbl-pink">Need to learn more</a></p>
+			</div>
+		</section> <!-- HTML tag <section> merepresentasikan sebuah bagian dokumen atau aplikasi. Secara kontekstual, <section> element digunakan untuk mengelompokkan konten/dokumen menjadi beberapa bagian berdasarkan tema atau pokok pikiran masing-masing -->
+
+		<!-- Untuk Courses -->
+		<section id="courses">
+			<div class="column">
+				<p class="description">You Will Need This</p>
+				<h2>Online Courses</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p><a href="" class="tbl-biru">Need To Learn More</a></p>
+			</div>
+			<img src="https://image.freepik.com/free-vector/online-tutorials-concept_52683-37480.jpg"/>
+		</section>
+
+		<!-- Untuk Tutors -->
+		<section id="tutors">
+			<div class="mid">
+				<div class="column">
+					<p class="description">Our Top Tutors</p>
+					<h2>Tutors</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+				<div class="tutor-list">
+					<div class="tutor-card">
+						<img src="https://www.gannett-cdn.com/presto/2020/10/21/USAT/fb9435e7-7c01-4c88-a1e0-f95a14adb284-USATSI_15093057.jpg"/>
+						<p>Clayton Kershaw</p>
+					</div>
+					<div class="tutor-card">
+						<img src="https://www.gannett-cdn.com/presto/2020/10/21/USAT/fb9435e7-7c01-4c88-a1e0-f95a14adb284-USATSI_15093057.jpg"/>
+						<p>Lebron James</p>
+					</div>
+					<div class="tutor-card">
+						<img src="https://www.gannett-cdn.com/presto/2020/10/21/USAT/fb9435e7-7c01-4c88-a1e0-f95a14adb284-USATSI_15093057.jpg"/>
+						<p>Lionel Messi</p>
+					</div>
+					<div class="tutor-card">
+						<img src="https://www.gannett-cdn.com/presto/2020/10/21/USAT/fb9435e7-7c01-4c88-a1e0-f95a14adb284-USATSI_15093057.jpg"/>
+						<p>Stephen Curry</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Untuk Partners -->
+		<section id="partners">
+			<div class="mid">
+				<div class="column">
+					<p class="description">Our Top Partners</p>
+					<h2>Partners</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+
+				<div class="partners-list">
+					<div class="partners-card">
+						<img src="https://st2.depositphotos.com/5284880/42062/v/600/depositphotos_420623324-stock-illustration-octagonal-mandala-logo-symbol-in.jpg"/>
+					</div>
+					<div class="partners-card">
+						<img src="https://st2.depositphotos.com/5284880/42062/v/600/depositphotos_420623324-stock-illustration-octagonal-mandala-logo-symbol-in.jpg"/>
+					</div>
+					<div class="partners-card">
+						<img src="https://st2.depositphotos.com/5284880/42062/v/600/depositphotos_420623324-stock-illustration-octagonal-mandala-logo-symbol-in.jpg"/>
+					</div>
+					<div class="partners-card">
+						<img src="https://st2.depositphotos.com/5284880/42062/v/600/depositphotos_420623324-stock-illustration-octagonal-mandala-logo-symbol-in.jpg"/>
+					</div>
+					<div class="partners-card">
+						<img src="https://st2.depositphotos.com/5284880/42062/v/600/depositphotos_420623324-stock-illustration-octagonal-mandala-logo-symbol-in.jpg"/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+	<!-- contact diletakkan di luar wrapper -->
+	<div id="contact">
+		<div class="wrapper">
+			<div class="footer">
+				<div class="footer-section">
+					<h3>Fajrin's House</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+				<div class="footer-section">
+					<h3>About</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+				</div>
+				<div class="footer-section">
+					<h3>Contact</h3>
+					<p>Samping SD 33 Rawang, 25216</p>
+					<p>Padang, West Sumatera</p>
+				</div>
+				<div class="footer-section">
+					<h3>Social</h3>
+					<p>Instagram : blablabla</p>
+					<p>Twitter : wkwkkwkkwk</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="copyright">
+		<div class="wrapper">
+			&copy; 2020. <b>Fajrin's House</b> All Right Reserved.
+		</div>
+	</div>
+
+</body>
+</html>
