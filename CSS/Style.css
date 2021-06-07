@@ -1,0 +1,222 @@
+* {
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+.wrapper {
+	width: 1100px;
+	margin: auto; /* auto membuat wrapper di bagian tengah */
+	position: relative;
+}
+.logo a {
+	font-size: 50px;
+	font-weight: 800;
+	float: left;
+	font-family: courier;
+	color: #364f6b;
+}
+.menu {
+	float: right;
+}
+nav {
+	width: 100%;
+	margin: auto;
+	display: flex; /* flex digunakan untuk membuat seperti kolom-kolom di menu */
+	line-height: 80px; /* line-height digunakan untuk membuat bagian atas dan bawah sama rata dibagian tengah dari div nya */
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0px;
+	background: #FFFFFF;
+	z-index: 1; /* z-index digunakan untuk mempertahankan menu home, courses, tutor dan lain-lain */
+	border-bottom: 1px solid #364f6b;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+nav ul li {
+	float: left;
+}
+nav ul li a {
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	padding: 0px 16px 0px 16px; /* padding digunakan agar atas kanan kiri bawah lebih tertata */
+	text-decoration: none;
+}
+nav ul li a:hover { /* memberikan garis pada bagian home, courses, tutor, partners, contact, sign up */
+	text-decoration: underline;
+}
+section {
+	margin: auto;
+	display: flex; 
+	margin-bottom: 50px; /* margin bottom dibuat 50px agar ada jarak antara 1 dengan yang lainnya */
+}
+.column {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.column .description {
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'comic sans ms';
+	color: #364f6b;
+}
+h2 {
+	font-family: 'comic sans ms';
+	font-weight: 800;
+	font-size: 45px;
+	margin-bottom: 20px;
+	color: #364f6b;
+	width: 100%;
+	line-height: 50px;
+}
+a.tbl-biru {
+	background: #3f72af;
+	border-radius: 20px;
+	margin-top: 20px;
+	padding: 15px 20px 15px 20px;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-weight: bold;
+}
+a.tbl-biru:hover {
+	background: #ff449f;
+	text-decoration: none;
+}
+a.tbl-pink {
+	background: #ff449f;
+	border-radius: 20px;
+	margin-top: 20px;
+	padding: 15px 20px 15px 20px;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-weight: bold;
+}
+p {
+	margin: 10px 0px 10px 0px;
+	padding: 10px 0px 10px 0px;
+}
+a.tbl-pink:hover {
+	background: #3f72af;
+	text-decoration: none;
+}
+.mid {
+	text-align: center;
+	width: 100%;
+}
+.tutor-list {
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap; /* agar tidak terlalu menjadi satu baris */
+}
+.tutor-card {
+	width: 20%;
+	margin: 0 auto;
+}
+.tutor-card img {
+	width: 80%;
+	border-radius: 50%;
+} /* apabila tutor card berukuran 20% dari total ukuran layar maka img berukuran 80% dari ukuran tutor card*/
+.tutor-card p {
+	font-family: 'comic sans ms';
+	font-weight: 800;
+	font-size: 25px;
+	text-align: center;
+	color: #364f6b;
+}
+.partners-list {
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+.partners-card {
+	width: 20%;
+	margin: 0 auto;
+}
+.partners-card img {
+	width: 80%;
+	border-radius: 50%;
+}
+/* Contact menggunakan tanda hashtag karena contact berada di luar wrapper */ 
+#contact {
+	background: #dedede;
+	padding: 50px 0px 50px 0px;
+}
+/* karena di dalam wrapper maka di letakkan titik sebelum menulis footer */ 
+.footer {
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap; /* agar tidak jadi 1 baris seterusnya */
+	margin: auto;
+}
+.footer-section {
+	width: 20%;
+	margin: 0 auto;
+}
+h3 {
+	font-family: 'comic sans ms';
+	font-weight: 800;
+	font-size: 30px;
+	margin-bottom: 30px;
+	color: #364f6b;
+	width: 100%;
+	line-height: 50px;
+}
+#copyright {
+	text-align: center;
+	width: 100%;
+	padding: 50px 0 px 50p 0px;
+	margin-top: 50px;
+}
+@media screen and (max-width:  991.98px) {
+	.wrapper {
+		width: 90%; /* dengan di atur 90% jadi mengikuti sesuai dengan 90% dari layar */
+	}
+	.logo a {
+		display: block; /* biar tetap 1 baris penuh dengan menggunakan block */
+		width: 100%;
+		text-align: center;
+	}
+	nav .menu {
+		width: 100%;
+		margin: 0;
+	}
+	nav .menu ul {
+		text-align: center;
+		margin: auto;
+		line-height: 60px;
+	}
+	nav .menu ul li {
+		display: inline-block;
+		float: none;
+	}
+	/* block digunakan untuk mengatur agar daat menampilkan gambar tidak flex tapi biasa saja */
+	section {
+		display: block;
+	}
+	section img {
+		display: block;
+		width: 100%;
+		height: auto;
+
+	}
+	/* untuk mengatur agar tutor menjadi 2 baris */
+	/* tidak perlu menambahkan img karena sudah langsung menyesuaikan dengan div yang ada di atasnya */
+	.tutor-card {
+		width: 50%;
+	}
+	.partners-card {
+		width: 50%;
+	}
+}
